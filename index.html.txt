@@ -18,8 +18,8 @@
 
         /* Hero Section Styling */
         .hero {
-            background: url('your-image.jpg') center/cover no-repeat; /* Replace with your image URL */
-            height: 50vh;
+            background-color: #1c1c1c; /* Dark background color for the hero section */
+            height: 30vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -42,24 +42,61 @@
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            margin: 10px;
             font-size: 16px;
             color: #fff;
-            background-color: #1db954; /* Button color (e.g., Spotify green) */
             text-decoration: none;
             border-radius: 25px;
             transition: background-color 0.3s ease;
             text-align: center;
         }
 
-        .btn:hover {
-            background-color: #1ed760; /* Lighter color on hover */
+        /* Individual Button Colors */
+        .btn-spotify {
+            background-color: #1db954; /* Spotify green */
+        }
+
+        .btn-spotify:hover {
+            background-color: #1ed760; /* Slightly lighter green */
+        }
+
+        .btn-apple {
+            background-color: #fa57c1; /* Apple Music pink */
+        }
+
+        .btn-apple:hover {
+            background-color: #ff6ac7; /* Slightly lighter pink */
+        }
+
+        .btn-youtube {
+            background-color: #ff0000; /* YouTube red */
+        }
+
+        .btn-youtube:hover {
+            background-color: #ff4d4d; /* Slightly lighter red */
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
+        }
+
+        .btn-instagram:hover {
+            opacity: 0.8; /* Slight opacity change on hover */
+        }
+
+        .btn-tiktok {
+            background-color: #010101; /* TikTok dark color */
+            border: 2px solid #69c9d0; /* TikTok border color */
+        }
+
+        .btn-tiktok:hover {
+            background-color: #1e1e1e; /* Slightly lighter TikTok color */
         }
 
         /* Footer Styling */
         footer {
             margin-top: 20px;
             font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
 </head>
@@ -67,21 +104,21 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <h1>J. Pxblo</h1> <!-- Replace with your name or logo -->
+        <h1>J. Pxblo</h1> <!-- Artist name display -->
     </header>
 
     <!-- Social Media and Links Section -->
     <section class="links">
-        <a href="https://open.spotify.com/artist/3CO9tMTLETU3DF52XB8BJE?si=4y-kq0WzRdagCxwQycGyCg" target="_blank" class="btn">Listen on Spotify</a>
-        <a href="https://youtube.com/yourchannel" target="_blank" class="btn">Watch on YouTube</a>
-        <a href="https://instagram.com/yourprofile" target="_blank" class="btn">Follow on Instagram</a>
-        <a href="https://twitter.com/yourprofile" target="_blank" class="btn">Follow on Twitter</a>
-        <!-- Add more buttons as needed -->
+        <a href="https://open.spotify.com/artist/3CO9tMTLETU3DF52XB8BJE?si=T03sCkdtRbe2MiPQOD-08w" target="_blank" class="btn btn-spotify">Listen on Spotify</a>
+        <a href="https://music.apple.com/se/artist/j-pxblo/1483633961?l=en-GB" target="_blank" class="btn btn-apple">Listen on Apple Music</a>
+        <a href="https://www.youtube.com/@jpxblo" target="_blank" class="btn btn-youtube">Watch on YouTube</a>
+        <a href="https://www.instagram.com/j.pxblo/" target="_blank" class="btn btn-instagram">Follow on Instagram</a>
+        <a href="https://www.tiktok.com/@j.pxblo" target="_blank" class="btn btn-tiktok">Follow on TikTok</a>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 J. Pxblo. All rights reserved.</p>
+        <p>Follow me on social media: @j.pxblo</p>
     </footer>
 
 </body>
