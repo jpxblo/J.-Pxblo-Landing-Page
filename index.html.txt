@@ -6,66 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Artist Name</title>
     <style>
+        /* Basic Reset and Body Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background-color: #121212; /* Dark background */
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             text-align: center;
         }
-        header {
-            margin-bottom: 20px;
-        }
+
+        /* Hero Section Styling */
         .hero {
-            background: url('your-image.jpg') center/cover no-repeat;
-            width: 100%;
+            background: url('your-image.jpg') center/cover no-repeat; /* Replace with your image URL */
             height: 50vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-shadow: 2px 2px 8px #000;
         }
-        h1 {
+
+        .hero h1 {
             font-size: 3rem;
             margin: 0;
         }
+
+        /* Buttons Section Styling */
         .links {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             margin: 20px 0;
         }
-        .links a {
-            text-decoration: none;
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
             color: #fff;
-            background-color: #1db954;
-            padding: 10px 20px;
+            background-color: #1db954; /* Button color (e.g., Spotify green) */
+            text-decoration: none;
             border-radius: 25px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
+            text-align: center;
         }
-        .links a:hover {
-            background-color: #1ed760;
+
+        .btn:hover {
+            background-color: #1ed760; /* Lighter color on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- Hero Section -->
     <header class="hero">
-        <h1>Your Artist Name</h1>
+        <h1>Your Artist Name</h1> <!-- Replace with your name or logo -->
     </header>
 
+    <!-- Social Media and Links Section -->
     <section class="links">
-        <a href="https://spotify.com/yourprofile" target="_blank">Listen on Spotify</a>
-        <a href="https://youtube.com/yourchannel" target="_blank">Watch on YouTube</a>
-        <a href="https://instagram.com/yourprofile" target="_blank">Follow on Instagram</a>
-        <!-- Add more links as needed -->
+        <a href="https://spotify.com/yourprofile" target="_blank" class="btn">Listen on Spotify</a>
+        <a href="https://youtube.com/yourchannel" target="_blank" class="btn">Watch on YouTube</a>
+        <a href="https://instagram.com/yourprofile" target="_blank" class="btn">Follow on Instagram</a>
+        <a href="https://twitter.com/yourprofile" target="_blank" class="btn">Follow on Twitter</a>
+        <!-- Add more buttons as needed -->
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Your Artist Name. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
